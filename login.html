@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt-br">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/geral.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>TTwitter - Login</title>
+  </head>
+  <body>
+    <article>
+      <img class="logo-grande" src="./imagem/logo.png" alt="Logo do TTwitter"/>
+      <section>
+        <header>
+          Bem vindo a plataforma TTwitter
+        </header>
+        <form onsubmit="return validaLogin()">
+          <div class="formulario-campo">
+            <input class="formulario-input" type="email" id="email" name="email" placeholder="example@email.com">
+            <label class="formulario-label" for="email">Email</label>
+          </div><br>
+          <div class="formulario-campo">
+            <input class="formulario-input" type="password" id="senha" name="senha">
+            <label class="formulario-label" for="senha">Senha</label>
+            <img class="formulario-exibir-senha" src="./imagem/visibility.png" alt="Visualizar senha"/>
+          </div><br>
+          <div  class="formulario-rec-senha">
+            <a href="#recuperar-senha">Esqueci minha senha</a>
+          </div><br>        
+          <input class="formulario-button" type="submit" value="Entrar">
+        </form>
+        <a class="formulario-registrar" href="./cadastro.html">Registrar</a>
+        <footer>
+          Li e estou de acordo com os <a href="#termos">Termos</a> e <a href="#condicoes">Condições de uso</a>.
+        </footer>     
+      </section>
+    </article>
+    <!-- carregar script após o conteúdo da página geralmente melhora a experiência do usuário -->
+    <script type="application/javascript" src="./script/login.js"></script>   
+    <noscript>
+      <div class="alerta">
+        A execução de scripts está desabilitada no seu navegador. 
+        Algumas funcionalidades da página não irão funcionar corretamente!
+      </div>  
+    </noscript>
+  </body>
+</html>

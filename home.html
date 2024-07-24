@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt-br">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/geral.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>TTwitter - Home</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="./imagem/logo.png" alt="Logo do TTwitter"/>
+      <div id="busca-barra">
+        <input type="text" placeholder="Buscar">
+        <img id="busca-lupa" src="./imagem/buscar.png" alt="Lupa de busca"/>
+      </div>
+    </header>
+
+    <div class="pagina">
+      <nav>
+        <img class="nav-icone" src="./imagem/home.png" alt="Home"/>
+        <img class="nav-icone" src="./imagem/bell.png" alt="Nova mensagem"/>
+        <img class="nav-icone" src="./imagem/comment.png" alt="Comentários"/>
+        <img class="nav-icone" src="./imagem/setting.png" alt="Configurações"/>
+      </nav>
+
+      <article>
+        <div class="criar-post">
+          <form id="postar" onsubmit="return validaPost()">
+            <textarea id="postar-texto" form="postar" rows="4" cols="64" placeholder="No que está pensando...?"></textarea>
+            <input id="postar-button" type="submit" value="Postar">
+          </form>
+          <div class="postar-icones">
+            <img class="postar-icone" src="./imagem/baseline-image.png" alt="Postar imagem"/>
+            <img class="postar-icone" src="./imagem/emoji.png" alt="Postar emoji"/>
+            <img class="postar-icone" src="./imagem/link.png" alt="Postar link"/>
+          </div>
+        </div>
+        <section class="post">
+          <img class="post-imagem" src="./imagem/imagem-teste.png" alt="Imagem do post"/>
+          <div class="post-barra">
+            <div class="post-usuario">
+              <img class="usuario-avatar" src="./imagem/circulo.png" alt="Avatar do usuário"/>
+              @usuario
+            </div>
+            <div class="post-icones">
+              <img class="post-icone" src="./imagem/message.png" alt="Responder post"/>
+              <img class="post-icone" src="./imagem/curtir.png" alt="Curtir post"/>
+              <img class="post-icone" src="./imagem/coracao.png" alt="Gostei do post"/>
+            </div>
+          </div>
+          <div class="post-texto">
+            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+          </div>
+        </section>
+      </article>
+
+      <aside>
+        Pessoas que você talvez conheça
+        <div class="talvez-conheca">
+          <div class="sugestao">
+            <div class="sugestao-usuario">
+              <img class="usuario-avatar" src="./imagem/circulo.png" alt="Avatar do usuário"/>
+              @usuario
+            </div>
+            <input class="sugestao-adicionar" type="submit" value="Adicionar">
+          </div>
+          <div class="sugestao">
+            <div class="sugestao-usuario">
+              <img class="usuario-avatar" src="./imagem/circulo.png" alt="Avatar do usuário"/>
+              @usuario
+            </div>
+            <input class="sugestao-adicionar" type="submit" value="Adicionar">
+          </div>
+          <div class="sugestao">
+            <div class="sugestao-usuario">
+              <img class="usuario-avatar" src="./imagem/circulo.png" alt="Avatar do usuário"/>
+              @usuario
+            </div>
+            <input class="sugestao-adicionar" type="submit" value="Adicionar">
+          </div>
+          <div class="sugestao">
+            <div class="sugestao-usuario">
+              <img class="usuario-avatar" src="./imagem/circulo.png" alt="Avatar do usuário"/>
+              @usuario
+            </div>
+            <input class="sugestao-adicionar" type="submit" value="Adicionar">
+          </div>
+        </div>
+      </aside>
+    </div>    
+
+    <!-- carregar script após o conteúdo da página geralmente melhora a experiência do usuário -->
+    <script type="application/javascript" src="./script/home.js"></script>   
+    <noscript>
+      <div class="alerta">
+        A execução de scripts está desabilitada no seu navegador. 
+        Algumas funcionalidades da página não irão funcionar corretamente!
+      </div>  
+    </noscript>
+  </body>
+</html>

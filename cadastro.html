@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt-br">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/geral.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <title>TTwitter - Cadastro</title>
+  </head>
+  <body>
+    <article>      
+      <section>
+        <header>
+          Cadastro
+        </header>
+        <form onsubmit="return validaCadastro()">
+          <div class="formulario-campo">
+            <input class="formulario-input" type="text" id="nome" name="nome" placeholder="nome de usuário">
+            <label class="formulario-label" for="nome">Nome</label>
+          </div><br>
+          <div class="formulario-campo">
+            <input class="formulario-input" type="email" id="email" name="email" placeholder="example@email.com">
+            <label class="formulario-label" for="email">Email</label>
+          </div><br>
+          <div class="formulario-campo">
+            <input class="formulario-input" type="date" id="nascimento" name="nascimento">
+            <label class="formulario-label" for="email">Data de nascimento</label>
+          </div><br>
+          <div class="formulario-campo">
+            <input class="formulario-input" type="password" id="senha" name="senha">
+            <label class="formulario-label" for="senha">Senha</label>
+            <img class="formulario-exibir-senha" src="./imagem/visibility.png" alt="Visualizar senha"/>
+          </div><br>
+          <div class="formulario-campo">
+            <input class="formulario-input" type="password" id="confirmar-senha" name="confirmar-senha">
+            <label class="formulario-label" for="confirmar-senha">Confirmar senha</label>
+            <img class="formulario-exibir-senha" src="./imagem/visibility.png" alt="Visualizar senha"/>
+          </div><br>
+          <div  class="formulario-termos">
+            <input type="checkbox" id="checkbox" name="termos-condicoes">
+            <label for="termos-condicoes">
+              Li e estou de acordo com os <a href="#termos">Termos</a> e <a href="#condicoes-uso">Condições de uso</a>.
+            </label>
+          </div><br>        
+          <input class="formulario-button" type="submit" value="Cadastrar">
+        </form>
+        <a class="formulario-registrar" href="./login.html">Fazer Login</a>
+        <footer></footer>    
+      </section>
+      <img class="logo-grande" src="./imagem/logo.png" alt="Logo do TTwitter"/>
+    </article>
+    <!-- carregar script após o conteúdo da página geralmente melhora a experiência do usuário -->
+    <script type="application/javascript" src="./script/cadastro.js"></script>   
+    <noscript>
+      <div class="alerta">
+        A execução de scripts está desabilitada no seu navegador. 
+        Algumas funcionalidades da página não irão funcionar corretamente!
+      </div>  
+    </noscript>
+  </body>
+</html>
